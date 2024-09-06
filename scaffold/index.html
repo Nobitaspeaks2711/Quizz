@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Rules Section -->
+        <div id="start-rules">
+            <h2>Welcome to Ninja's Quiz.</h2>
+            <h3>Rules: </h3>
+            <ul>
+                <li>Each question has 4 possible answers, only one is correct.</li>
+                <li>You will have 30 seconds to answer each question.</li>
+                <li>Your score increases with each correct answer.</li>
+                <li>Try to score as high as possible!</li>
+            </ul>
+        </div>
+
+        <!-- Start Screen Section -->
+        <div id="startScreen">
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen Section -->
+        <div id="quizScreen" class="hidden">
+            <div>
+                <p id="question">Question will appear here.</p>
+                <div id="answers">
+                    <button class="answer">Answer 1</button>
+                    <button class="answer">Answer 2</button>
+                    <button class="answer">Answer 3</button>
+                    <button class="answer">Answer 4</button>
+                </div>
+                <p>Time left: <span id="timer">30</span> seconds</p>
+                <p>Score: <span id="score">0</span></p>
+            </div>
+        </div>
+
+        <!-- End Screen Section -->
+        <div id="endScreen" class="hidden">
+            <div>
+                <h2 id="game-over">Game Over!</h2>
+                <p>Improve your knowledge by playing again and again.</p>
+                <h3>Final Score: <span id="finalScore">0</span></h3>
+                <p id="endMessage"></p>
+                <button id="playAgain">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
